@@ -3,3 +3,4 @@
 publisher_name = "CAT-Ziegler"
 apim_subnet_id = "cat-dealer-integ-apim-subnet"
 workspace_id = "cat-dealer-integ-log-analytics-ws"
+instrumentation_key = "cat-dealer-integ-appinsights-instr-key"
