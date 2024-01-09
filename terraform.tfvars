@@ -21,37 +21,12 @@ backend_subnet_id = "cat-dealer-integ-backend-subnet"
 # gateway #
 resource_group_name = "rg-apim-gw"
 resource_group_location = "eastus"
+secret_name = "apim-key-vault"
+app_gateway_certificate_type = "selfsigned"
+certificate_password = "apimcert100"
+subnet_id = "cat-dealer-integ-app-gw-subnet"
+#################################################################################################################
 
-variable "secret_name" {
-  type        = string
-  description = ""
-}
+###############################################################################################################
+# networking #
 
-variable "keyvault_id" {
-  type        = string
-  description = ""
-  default     = null
-}
-
-variable "app_gateway_certificate_type" {
-  type        = string
-  description = "The certificate type used for the app gateway. Either custom or selfsigned"
-}
-
-
-variable "certificate_password" {
-  type        = string
-  description = ""
-}
-
-variable "resource_suffix" {
-  type        = string
-  description = ""
-}
-
-
-
-variable "subnet_id" {
-  type        = string
-  description = ""
-}
