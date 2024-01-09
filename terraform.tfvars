@@ -19,15 +19,8 @@ backend_subnet_id = "cat-dealer-integ-backend-subnet"
 
 ###################################################################################################################
 # gateway #
-variable "resource_group_name" {
-  type        = string
-  description = ""
-}
-
-variable "resource_group_location" {
-  type        = string
-  description = ""
-}
+resource_group_name = "rg-apim-gw"
+resource_group_location = "eastus"
 
 variable "secret_name" {
   type        = string
@@ -45,11 +38,6 @@ variable "app_gateway_certificate_type" {
   description = "The certificate type used for the app gateway. Either custom or selfsigned"
 }
 
-variable "certificate_path" {
-  type        = string
-  description = ""
-  default     = null
-}
 
 variable "certificate_password" {
   type        = string
@@ -61,23 +49,7 @@ variable "resource_suffix" {
   description = ""
 }
 
-variable "fqdn" {
-  type        = string
-  description = ""
-  default     = "api.example.com"
-}
 
-variable "primary_backendend_fqdn" {
-  type        = string
-  description = ""
-  default     = "api-internal.example.com"
-}
-
-variable "probe_url" {
-  type        = string
-  description = ""
-  default     = "/status-0123456789abcdef"
-}
 
 variable "subnet_id" {
   type        = string
