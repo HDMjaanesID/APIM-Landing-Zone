@@ -13,7 +13,6 @@ instrumentation_key = "cat-dealer-integ-appinsights-instr-key"
 
 ##################################################################################################################
 # backend #
-workload_name = "cat-ecommerce-to-d365-api"
 storage_replication_type = "GRS"
 backend_subnet_id = "cat-dealer-integ-backend-subnet"
 
