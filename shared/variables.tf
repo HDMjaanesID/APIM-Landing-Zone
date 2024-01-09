@@ -43,13 +43,13 @@ variable "resource_suffix" {
 variable "apim_name" {
   type        = string
   description = ""
-  default     = "apim.contoso.com"
+  default     = "apim.cat-ziegler.com"
 }
 
 variable "app_gateway_fqdn" {
   type        = string
   description = ""
-  default     = "api.contoso.com"
+  default     = "api.cat-ziegler.com"
 }
 
 variable "certificate_path" {
