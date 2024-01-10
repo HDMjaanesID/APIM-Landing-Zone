@@ -1,6 +1,6 @@
 trigger: none
 
-pool: $("apim-pool")
+pool: $(pool_name)
 
 steps:  
 - task: UseDotNet@2      
