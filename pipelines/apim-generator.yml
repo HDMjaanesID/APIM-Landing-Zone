@@ -1,6 +1,7 @@
 trigger: none
 
-pool: $(pool_name)
+pool:
+  vmImage: ubuntu-latest
 
 steps:  
 - task: UseDotNet@2      
