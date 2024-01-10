@@ -1,6 +1,6 @@
 trigger: none
 
-pool: $(poolName)
+pool: var.pool_name
 
 steps:  
 - task: UseDotNet@2      
