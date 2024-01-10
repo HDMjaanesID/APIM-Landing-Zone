@@ -118,7 +118,7 @@ variable "account_name" {
 variable "pool_name" {
   type        = string
   description = "The name Azure DevOps or GitHub pool for this build agent to join. Use 'Default' if you don't have a separate pool"
-  default     = "default"
+  default     = "Default"
 }
 
 variable "cicd_spn_client_id" {
